@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FRONTIER</title>
+
+	<script src="jquery.js"></script>
+
+	<script src="code.js" type="text/javascript"></script>
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link href="style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="container">
+	<div class="top">
+    	<div class="logo">
+        	<img src="img/logo.png">
+        </div>
+    	<div class="planet">
+        <span class="planetImage"></span>
+            <span class="planetName"></span>
+            
+        </div>
+        <div class="upgrades">
+            <span>ENGINE</span>
+            <span>NAV</span>
+            <span>FUEL</span>
+            <span>SHIP</span>
+            <span>STORAGE</span>
+        <br>
+            <div class="engUpgrade"></div>
+            <div class="navUpgrade"></div>
+            <div class="fuelUpgrade"></div>
+            <div class="shipUpgrade"></div>
+            <div class="storUpgrade"></div>
+        </div>
+    </div>
+    
+    <div class="left">
+    	<div class="text">
+       		<span>CASH</span><br><br>
+        	<span>SHIP</span><br><br>
+        	<span>FUEL</span><br><br>
+            <span>STORAGE</span><br>
+        </div>
+         <div class="cashBox"></div>
+         <canvas id="healthBar"></canvas>
+         <canvas id="fuelBar"></canvas>
+         <canvas id="inventory"></canvas>
+    </div>
+    
+    <div class="mid">
+    	<div class="vrLeft"></div>
+        <div class="vrRight"></div>
+    	<div class="center">
+            <button class="button" id="salvage">SALVAGE SCRAP</button>
+            <button class="button" id="prices">SET PRICES</button>
+            <button class="button" id="store">SETUP STORE</button>
+            <button class="button" id="blackMarket">BLACK MARKET</button>
+            <button class="button" id="cityMarket">CITY MARKET</button>
+            <button class="button" id="travel">TRAVEL</button>
+         </div>
+        
+    </div>
+    
+    <div class="right">
+    	<div class="salvage">
+            salvage arm
+            <button class="button" id="salvageBtn">OFF</button>
+            MATERIALS<br>
+            SCRAP:<br>
+            IRON ORE:<br>
+            SHIP DEBRIS:<br>
+            DANGER:<br>
+            <canvas id="dangerBar"></canvas>
+            <button class="button">RETRIVE SCRAP</button> 
+        </div>
+        <div class="prices">prices<br><br>
+        	SCRAP<br><br>
+            <div class="slider"></div><br><br>
+            IRON ORE<br><br>
+            <div class="slider"></div><br><br>
+            FUEL<br><br>
+            <div class="slider"></div><br><br>
+            AMMO<br><br>
+            <div class="slider"></div><br><br>
+        
+        </div>
+        <div class="store">store</div>
+        <div class="blackMarket">blackMarket</div>
+        <div class="cityMarket">cityMarket</div>
+        <div class="travel">travel</div>
+    </div>
+</div>
+<div class="hiddenAssets">
+<img src="img/health.png" id="healthImage">
+<img src="img/fuel.png" id="fuelImage">
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* Style */
+
+body{
+	background-color:#333;	
+	color:#fff;
+	font-family: 'Roboto Slab', serif;
+}
+
+.button{
+	width:233px;
+	height:60px;
+	border:3px solid #fff;
+	color:#fff;
+	background-color:transparent;
+	margin:5px 0 5px 0;	
+	font-family: 'Roboto Slab', serif;
+	font-size:22px;
+	font-weight:300;
+}
+
+.cashBox{
+	width:200px;
+	height:33px;
+	margin-right:10px;
+	margin-bottom:18px;
+	float:right;
+	font-size:22px;
+	font-weight:300;
+}
+
+.center{
+	margin:0px auto;
+	width:235px;
+	margin-top:10px;
+}
+
+.container{
+	width:1000px;
+	height:600px;
+	margin:0px auto;
+	margin-top:50px;
+	padding:10px;
+}
+
+.engUpgrade, .navUpgrade, .fuelUpgrade, .shipUpgrade, .storUpgrade{
+	width:85px;
+	height:50px;
+	display:inline-block;
+	margin:0 17px 0 17px;
+	text-align:center;
+	font-size:32px;	
+}
+
+#fuelBar, #healthBar, #dangerBar{
+	width:200px;
+	height:33px;
+	border:3px solid #fff;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+.hiddenAssets{
+	display:none;
+}
+
+#inventory{
+	width:200px;
+	height:200px;
+	border:3px solid #fff;
+	margin-left:10px;
+}
+
+.logo{
+	width:110px;
+	height:100px;
+	float:left;	
+}
+
+.left, .mid, .right{
+	width:323px;
+	height:75%;
+	margin:0 5px 0 5px;
+	float:left;
+
+}
+
+.salvage, .prices, .blackMarket, .cityMarket, .store, .travel{
+	width:90%;
+	height:100%;
+	display:none;
+	margin:0px auto;
+}
+
+.planet{
+	width:200px;
+	height:140px;
+	display:inline-block;
+	text-align:center;
+}
+
+.selected{
+	background-color:#666;	
+}
+
+.text{
+	width:100px;
+	height:100%;	
+	float:left;
+	text-align:right;
+	font-size:22px;
+	font-weight:300;
+}
+
+.text span{
+	float:right;
+	margin-bottom:10px;
+}
+
+.top{
+	width:100%;
+	height:145px;
+	margin-bottom:5px;
+}
+
+.upgrades{
+	border:3px solid #fff;
+	width:620px;
+	height:80px;
+	float:right;
+	margin:0 10px 20px 0;
+}
+
+.upgrades span{
+	display:inline-block;
+	width:85px;
+	margin:10px 17px 0 17px;
+	text-align:center;	
+}
+
+.vrLeft, .vrRight{
+	width:3px;
+	height:100%;
+	background-color:#fff;
+	display:inline-block;
+	float:left;
+}
+
+.vrRight{
+	float:right;	
+}
