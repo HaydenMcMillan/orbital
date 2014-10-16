@@ -30,10 +30,10 @@ $.fn.preload = function() {
 	var capacity = 1;
 	
 	/*salvage*/
-	var danger = 1;
-	var scrap = 0;
-	var ore = 0;
-	var debris = 0;
+	var scrap = 1;
+	var ore = 3;
+	var debris = 20;
+	var danger = 7;
 	
 	/*GLOBAL CANVAS VARIABLES*/
 	var healthCanvas = document.getElementById('healthBar').getContext('2d');
@@ -47,8 +47,6 @@ $.fn.preload = function() {
 	canvasDraw();
 	
 	salvageScrap();
-	setPrices();
-	setPrices();
 	blackMarket();
 	cityMarket();
 	travel();
@@ -60,7 +58,6 @@ function update(){
 	$(".cashBox").append("$ " + cash);	 
 	
 	bars();
-	update();
 }
 
 	/*CANVAS*/
@@ -124,11 +121,6 @@ $("#salvage").click(function(){
 	$(".salvage").show();
 	$(this).addClass("selected");
 });
-$("#prices").click(function(){
-	hideAll();
-	$(".prices").show();
-	$(this).addClass("selected");
-});
 $("#store").click(function(){
 	hideAll();
 	$(".store").show();
@@ -154,7 +146,6 @@ $("#travel").click(function(){
 function hideAll(){
 	$(".button").removeClass("selected");
 	$(".salvage").hide();
-	$(".prices").hide();
 	$(".store").hide();
 	$(".blackMarket").hide();
 	$(".cityMarket").hide();
@@ -289,10 +280,10 @@ function salvageScrap(){
           return text === "OFF" ? "ON" : "OFF";
       });
    });
-}
-	/*SET PRICES*/
-function setPrices(){
-	
+   
+   $("#scrap").append(scrap);
+   $("#ore").append(ore);
+   $("#debris").append(debris);
 }
 	/*SETUP STORE*/
 function setupStore(){

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>FRONTIER</title>
+<title>ORBITAL</title>
 
 	<script src="jquery.js"></script>
 
@@ -58,7 +58,6 @@
         <div class="vrRight"></div>
     	<div class="center">
             <button class="button" id="salvage">SALVAGE SCRAP</button>
-            <button class="button" id="prices">SET PRICES</button>
             <button class="button" id="store">SETUP STORE</button>
             <button class="button" id="blackMarket">BLACK MARKET</button>
             <button class="button" id="cityMarket">CITY MARKET</button>
@@ -72,25 +71,26 @@
             salvage arm
             <button class="button" id="salvageBtn">OFF</button>
             MATERIALS<br>
-            SCRAP:<br>
-            IRON ORE:<br>
-            SHIP DEBRIS:<br>
+            SCRAP:<div class="num" id="scrap"></div><br>
+            IRON ORE:<div class="num" id="ore"></div><br>
+            SHIP DEBRIS:<div class="num" id="debris"></div><br>
             DANGER:<br>
             <canvas id="dangerBar"></canvas>
             <button class="button">RETRIVE SCRAP</button> 
         </div>
-        <div class="prices">prices<br><br>
-        	SCRAP<br><br>
-            <div class="slider"></div><br><br>
-            IRON ORE<br><br>
-            <div class="slider"></div><br><br>
-            FUEL<br><br>
-            <div class="slider"></div><br><br>
-            AMMO<br><br>
-            <div class="slider"></div><br><br>
-        
+        <div class="store">store
+            <form>
+        	SCRAP<br><input type="number" name="scrapNo" placeholder="number to sell"/> x <input type="number" name="scrapPrice" placeholder="sale price"/>
+        	<br><br><br>
+            IRON ORE<br><input type="number" name="ironNo" placeholder="number to sell"/> x <input type="number" name="ironPrice" placeholder="sale price"/>
+            <br><br><br>
+            FUEL<br><input type="number" name="fuelNo" placeholder="number to sell"/> x <input type="number" name="fuelPrice" placeholder="sale price"/>
+            <br><br><br>
+            AMMO<br><input type="number" name="ammoNo" placeholder="number to sell"/> x <input type="number" name="ammoPrice" placeholder="sale price"/>
+            <br><br><br>
+            <button class="button" id="openStore">OPEN STORE</button>
+            </form>
         </div>
-        <div class="store">store</div>
         <div class="blackMarket">blackMarket</div>
         <div class="cityMarket">cityMarket</div>
         <div class="travel">travel</div>

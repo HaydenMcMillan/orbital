@@ -85,7 +85,11 @@ body{
 
 }
 
-.salvage, .prices, .blackMarket, .cityMarket, .store, .travel{
+.num{
+	width:10px;
+}
+
+.salvage, .blackMarket, .cityMarket, .store, .travel{
 	width:90%;
 	height:100%;
 	display:none;
