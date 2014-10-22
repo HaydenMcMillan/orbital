@@ -112,7 +112,6 @@ function canvasDraw(){
 	inventoryCanvas.strokeStyle = "#cccccc";
 	inventoryCanvas.lineWidth = 0.5;
 	inventoryCanvas.stroke();
-	
 }
 	
 	/*BUTTONS*/
